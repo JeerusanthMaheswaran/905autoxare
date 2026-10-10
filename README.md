@@ -7,13 +7,17 @@ A static site with no build step. Upload the folder to any web host (GitHub Page
 | `index.html` | 905 Heavy Equipment: rentals, repair, demolition, excavation |
 | `autocare.html` | 905 Auto Care & Collision Center |
 
-## How booking works
-The booking forms open **WhatsApp** with the customer's request already written out, addressed to
-**647-983-7575**. To use a different number, change `data-wa="16479837575"` on the `<body>`
-tag of each page and the `wa.me/16479837575` links (country code + number, no spaces).
+## Online booking & quotes
+Both pages have a 4-step booking calendar: **Services → Date/Time → Details → Confirm**.
+- A live **quote panel** updates as services are picked.
+- Customers can **download a branded PDF quote** (reference number, items, HST) and **add the booking to their calendar** (.ics).
+- Auto Care: pick a day and time slot inside opening hours. Heavy Equipment: pick start and end dates, and rental items are multiplied by the number of days.
 
-Auto Care time slots follow the opening hours in the form's `data-hours` attribute
-(0 = Sunday … 6 = Saturday).
+All settings live in **`assets/booking-config.js`**:
+- **Prices:** set `price: 89.99` on a service (or leave `null` to show "Quote"). HST 13% is added once every line has a price.
+- **Bookings by email:** get a free access key at https://web3forms.com, then paste it into `web3formsKey`.
+  Until then, the Confirm button sends the booking through WhatsApp (647-983-7575).
+- **Opening hours, closed dates** (holidays), and how far ahead people can book.
 
 ## Google reviews
 Paste real reviews from the Google Business Profile into `assets/reviews.js`. They show up

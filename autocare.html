@@ -71,7 +71,7 @@
     </nav>
     <div class="header-cta">
       <a class="btn btn-o" href="tel:+19054516700"><svg><use href="#i-phone"/></svg>905-451-6700</a>
-      <a class="btn btn-wa" href="#book"><svg><use href="#i-wa"/></svg>Book on WhatsApp</a>
+      <a class="btn btn-a" href="#book">Book Online</a>
     </div>
     <button class="menu-btn" aria-label="Open menu">☰</button>
   </div>
@@ -83,11 +83,11 @@
       <div class="reveal">
         <span class="eyebrow">🏁 Established 2014 · Open 7 Days</span>
         <h1>Experienced Mechanics <span class="accent">You Can Rely On</span></h1>
-        <p class="lead">We're a family-owned shop serving Brampton, Mississauga, Caledon and nearby areas. Our team has over 50 years of combined experience and does quality repairs at competitive prices. Book your appointment on WhatsApp in under a minute.</p>
+        <p class="lead">We're a family-owned shop serving Brampton, Mississauga, Caledon and nearby areas. Our team has over 50 years of combined experience and does quality repairs at competitive prices. Book online in under a minute and get your quote right away.</p>
         <div class="ctas">
-          <a class="btn btn-wa btn-lg" href="#book"><svg><use href="#i-wa"/></svg>Book an Appointment</a>
-          <a class="btn btn-o btn-lg" href="tel:+19054516700"><svg><use href="#i-phone"/></svg>905-451-6700</a>
-        </div>
+          <a class="btn btn-a btn-lg" href="#book">📅 Book an Appointment</a>
+          <a class="btn btn-wa btn-lg" href="https://wa.me/16479837575" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+          </div>
         <div class="trust">
           <span>🏁 <b>Since 2014</b></span>
           <span>🧰 <b>50+ yrs</b> combined experience</span>
@@ -173,72 +173,15 @@
   </section>
 
   <!-- BOOK -->
-  <section id="book" class="alt">
-    <div class="wrap book-wrap">
-      <div class="book-side reveal">
-        <span class="eyebrow">Book an Appointment</span>
-        <h2 style="font-size:clamp(2rem,4.2vw,3rem)">Book in 60 Seconds<br>on <span style="color:var(--wa)">WhatsApp</span></h2>
-        <p style="color:var(--muted);margin-top:14px;font-size:1.06rem">Pick your services, a day and a time. WhatsApp opens with your booking already written out. Tap send and we'll confirm.</p>
-        <ul class="info-list">
-          <li><span class="ic"><svg><use href="#i-wa"/></svg></span><div><small>WhatsApp · Call · Text</small><a href="https://wa.me/16479837575" target="_blank" rel="noopener">647-983-7575</a></div></li>
-          <li><span class="ic"><svg><use href="#i-phone"/></svg></span><div><small>Shop</small><a href="tel:+19054516700">905-451-6700</a></div></li>
-          <li><span class="ic"><svg><use href="#i-phone"/></svg></span><div><small>Towing 24/7</small><a href="tel:+14377705440">437-770-5440</a></div></li>
-          <li><span class="ic"><svg><use href="#i-pin"/></svg></span><div><small>Location</small><a href="https://maps.google.com/?q=73+Eastern+Ave+Brampton+ON+L6W+1X9" target="_blank" rel="noopener">73 Eastern Ave, Brampton, ON L6W 1X9</a></div></li>
-        </ul>
-        <div class="quick">
-          <p>Or send a quick message:</p>
-          <div class="chips">
-            <a class="chip" data-wa-text="Hi 905 Auto Care, I'd like to book an oil change.">Oil change</a>
-            <a class="chip" data-wa-text="Hi 905 Auto Care, I need a safety certificate. When can I come in?">Safety certificate</a>
-            <a class="chip" data-wa-text="Hi 905 Auto Care, I'd like to book a tire change.">Tire change</a>
-            <a class="chip" data-wa-text="Hi 905 Auto Care, I need a quote for collision repair.">Collision quote</a>
-            <a class="chip" data-wa-text="Hi 905 Auto Care, my check engine light is on. Can you take a look?">Check engine light</a>
-          </div>
-        </div>
+  <section id="book" class="book-sec">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">Online Booking</span>
+        <h2>Book Online &amp; Get an <span class="grad">Instant Quote</span></h2>
+        <p>Pick your services, choose a day and time on the calendar, and download a PDF quote. It takes about 60 seconds.</p>
       </div>
-
-      <form class="book reveal" novalidate
-            data-title="Appointment Request – 905 Auto Care"
-            data-hours='{"0":["10:00","18:30"],"1":["09:30","19:30"],"2":["09:30","19:30"],"3":["09:30","19:30"],"4":["09:30","19:30"],"5":["09:30","19:30"],"6":["10:00","18:30"]}'>
-        <div class="fh">
-          <h3>Book Appointment</h3>
-          <span class="wa-pill"><svg><use href="#i-wa"/></svg>Confirmed on WhatsApp</span>
-        </div>
-        <fieldset data-label="Services" data-required>
-          <legend>Services (pick all that apply)</legend>
-          <div class="pick">
-            <label><input type="checkbox" value="Oil Change"><span>Oil Change</span></label>
-            <label><input type="checkbox" value="Safety Certificate"><span>Safety Certificate</span></label>
-            <label><input type="checkbox" value="Brakes"><span>Brakes</span></label>
-            <label><input type="checkbox" value="Suspension"><span>Suspension</span></label>
-            <label><input type="checkbox" value="Tire Change"><span>Tire Change</span></label>
-            <label><input type="checkbox" value="Tire Repair"><span>Tire Repair</span></label>
-            <label><input type="checkbox" value="Battery"><span>Battery</span></label>
-            <label><input type="checkbox" value="Alternator / Starter"><span>Alternator / Starter</span></label>
-            <label><input type="checkbox" value="Collision Repair"><span>Collision Repair</span></label>
-            <label><input type="checkbox" value="Electrical"><span>Electrical</span></label>
-            <label><input type="checkbox" value="Heating / A/C"><span>Heating / A/C</span></label>
-            <label><input type="checkbox" value="Diagnostics / Other"><span>Diagnostics / Other</span></label>
-          </div>
-        </fieldset>
-        <div class="row3 row">
-          <label class="f">Year<input name="year" data-label="Year" inputmode="numeric" maxlength="4" placeholder="2019"></label>
-          <label class="f">Make<input name="make" data-label="Make" placeholder="Honda" required></label>
-          <label class="f">Model<input name="model" data-label="Model" placeholder="Civic"></label>
-        </div>
-        <div class="row">
-          <label class="f">Preferred day<input type="date" name="date" data-label="Preferred day" data-slot-date required></label>
-          <label class="f">Preferred time<select name="time" data-label="Preferred time" data-slots required></select></label>
-        </div>
-        <div class="row">
-          <label class="f">Your name<input name="name" data-label="Name" autocomplete="name" required></label>
-          <label class="f">Phone<input name="phone" type="tel" data-label="Phone" autocomplete="tel" placeholder="(647) 000-0000" required></label>
-        </div>
-        <label class="f">Anything else?<textarea name="notes" data-label="Notes" placeholder="Describe the problem, noises, warning lights…"></textarea></label>
-        <p class="err" role="alert"></p>
-        <button class="btn btn-wa btn-lg btn-block" type="submit"><svg><use href="#i-wa"/></svg>Send Booking on WhatsApp</button>
-        <p class="fine">Prefer to talk? Call <a href="tel:+19054516700">905-451-6700</a> or text <a href="sms:+16479837575">647-983-7575</a>.</p>
-      </form>
+      <div class="booker reveal" data-booker="autocare"></div>
+      <div class="book-alt reveal"><span>Prefer to talk?</span><a class="lnk" href="tel:+19054516700">📞 905-451-6700</a><span>·</span><a class="lnk" href="https://wa.me/16479837575" target="_blank" rel="noopener">💬 WhatsApp 647-983-7575</a><span>·</span><a class="lnk" href="tel:+14377705440">🚨 Towing 437-770-5440</a></div>
     </div>
   </section>
 
@@ -310,7 +253,7 @@
         <h2>Good to Know</h2>
       </div>
       <div class="faq">
-        <details class="reveal"><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking on WhatsApp gets you in faster and lets us have parts ready for you.</p></details>
+        <details class="reveal"><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking online gets you in faster and lets us have parts ready for you.</p></details>
         <details class="reveal"><summary>How long does a safety certificate take?</summary><p>Most inspections are done the same day. If your vehicle needs repairs to pass, we'll explain what's needed and give you a quote first.</p></details>
         <details class="reveal"><summary>Do you work on all makes and models?</summary><p>Yes. Toyota, Honda, BMW, Mercedes-Benz, Ford, Cadillac and more. Domestic, Asian and European vehicles are all welcome.</p></details>
         <details class="reveal"><summary>Can you tow my car to the shop?</summary><p>Yes. Our towing runs 24/7. Call 437-770-5440 and we'll bring your vehicle straight to the shop.</p></details>
@@ -338,10 +281,12 @@
 <a class="wa-float" href="https://wa.me/16479837575?text=Hi%20905%20Auto%20Care%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="tip">Book on WhatsApp</span><svg><use href="#i-wa"/></svg></a>
 <div class="callbar">
   <a class="c-call" href="tel:+19054516700"><svg><use href="#i-phone"/></svg>Call Shop</a>
-  <a class="c-wa" href="#book"><svg><use href="#i-wa"/></svg>Book Now</a>
+  <a class="c-wa" href="#book">📅 Book Online</a>
 </div>
 
 <script src="assets/reviews.js"></script>
+<script src="assets/booking-config.js"></script>
+<script src="assets/booking.js"></script>
 <script src="assets/site.js"></script>
 </body>
 </html>
