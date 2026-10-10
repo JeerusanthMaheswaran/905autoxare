@@ -2,425 +2,399 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>905 Heavy Equipment | Rentals, Repair, Demolition & Excavation – Brampton, ON</title>
-<meta name="description" content="905 Heavy Equipment – heavy equipment rentals and repair, demolition and excavation in Brampton, Mississauga, Caledon and across Ontario. Excavators, dozers, skid steers, wheel loaders, backhoes. Part of the 905 Group of Companies.">
-<link rel="icon" href="logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>905 Heavy Equipment | Equipment Rentals, Repair, Demolition &amp; Excavation – Brampton, ON</title>
+<meta name="description" content="Rent excavators, dozers, skid steers, wheel loaders and backhoes in Brampton, Mississauga, Caledon and across Ontario. Heavy equipment repair, demolition, excavation, flatbed hauling and 24/7 towing. Book on WhatsApp.">
+<meta name="theme-color" content="#0f1012">
+<meta property="og:title" content="905 Heavy Equipment – Rentals, Repair, Demolition & Excavation">
+<meta property="og:description" content="Excavators, dozers, skid steers, wheel loaders and backhoes. Book on WhatsApp. 24/7 towing: 437-770-5440.">
+<meta property="og:image" content="img/yard-1.jpg">
+<link rel="icon" href="img/905-heavy-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --yellow:#f5b800; --yellow-d:#d99f00;
-    --ink:#111214; --ink-2:#1b1d21; --ink-3:#26292e;
-    --text:#e9e9ea; --muted:#a3a6ad; --line:#33363c;
-    --paper:#f6f4ef; --paper-ink:#1a1a1a;
-    --radius:10px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--text);line-height:1.6}
-  img{max-width:100%;display:block}
-  a{color:inherit}
-  h1,h2,h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.1}
-  .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-  .stripe{height:10px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 18px,var(--ink) 18px 36px)}
-
-  /* top bar */
-  .topbar{background:var(--yellow);color:var(--ink);font-weight:600;font-size:.92rem}
-  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 20px;flex-wrap:wrap}
-  .topbar a{text-decoration:none}
-  .topbar .tow{font-family:Oswald,sans-serif;font-size:1.05rem;letter-spacing:.03em}
-
-  /* header */
-  header{position:sticky;top:0;z-index:50;background:rgba(17,18,20,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 20px}
-  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-  .brand img{width:52px;height:52px;border-radius:50%;border:2px solid var(--yellow)}
-  .brand b{font-family:Oswald,sans-serif;font-size:1.25rem;text-transform:uppercase;display:block;line-height:1}
-  .brand small{color:var(--muted);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
-  nav ul{display:flex;gap:26px;list-style:none}
-  nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted)}
-  nav a:hover{color:var(--yellow)}
-  .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:8px 12px;font-size:1rem}
-
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:var(--radius);font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit}
-  .btn-y{background:var(--yellow);color:var(--ink)}
-  .btn-y:hover{background:var(--yellow-d)}
-  .btn-o{border-color:var(--text);color:var(--text);background:transparent}
-  .btn-o:hover{border-color:var(--yellow);color:var(--yellow)}
-
-  /* hero */
-  .hero{position:relative;overflow:hidden;background:
-      radial-gradient(1000px 500px at 85% 20%,rgba(245,184,0,.18),transparent 60%),
-      linear-gradient(180deg,var(--ink-2),var(--ink));}
-  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:80px 20px 90px}
-  .eyebrow{display:inline-block;color:var(--yellow);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;margin-bottom:14px}
-  .hero h1{font-size:clamp(2.4rem,6vw,4.4rem)}
-  .hero h1 span{color:var(--yellow)}
-  .hero p{color:var(--muted);font-size:1.12rem;max-width:560px;margin:20px 0 30px}
-  .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-logo{justify-self:center;width:min(380px,100%);aspect-ratio:1;border-radius:50%;border:6px solid var(--yellow);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 14px rgba(245,184,0,.12)}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
-  .chips span{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.85rem;color:var(--muted)}
-
-  section{padding:90px 0}
-  .head{max-width:680px;margin-bottom:46px}
-  .head h2{font-size:clamp(2rem,4vw,2.9rem)}
-  .head p{color:var(--muted);margin-top:12px;font-size:1.05rem}
-
-  /* fleet */
-  .grid{display:grid;gap:20px}
-  .fleet{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
-  .card{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:26px;transition:transform .2s,border-color .2s}
-  .card:hover{transform:translateY(-4px);border-color:var(--yellow)}
-  .card svg{width:76px;height:52px;margin-bottom:16px;color:var(--yellow)}
-  .card h3{font-size:1.35rem;margin-bottom:8px}
-  .card p{color:var(--muted);font-size:.95rem}
-  .card .tag{display:inline-block;margin-top:14px;font-size:.78rem;font-weight:600;color:var(--yellow);letter-spacing:.08em;text-transform:uppercase}
-
-  /* services (light) */
-  .light{background:var(--paper);color:var(--paper-ink)}
-  .light .head p{color:#555}
-  .services{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
-  .svc{display:flex;gap:18px;background:#fff;border-radius:14px;padding:24px;border:1px solid #e5e1d6}
-  .svc .num{flex:none;width:48px;height:48px;border-radius:10px;background:var(--ink);color:var(--yellow);display:grid;place-items:center;font-family:Oswald,sans-serif;font-size:1.25rem}
-  .svc h3{font-size:1.2rem;margin-bottom:6px}
-  .svc p{color:#555;font-size:.95rem}
-
-  /* why */
-  .why{grid-template-columns:repeat(4,1fr)}
-  .stat{border-left:4px solid var(--yellow);padding:6px 0 6px 18px}
-  .stat b{font-family:Oswald,sans-serif;font-size:1.6rem;text-transform:uppercase;display:block}
-  .stat span{color:var(--muted);font-size:.95rem}
-
-  /* towing band */
-  .tow-band{background:var(--yellow);color:var(--ink);padding:56px 0}
-  .tow-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-  .tow-band h2{font-size:clamp(1.8rem,4vw,2.6rem)}
-  .tow-band p{font-weight:500;margin-top:6px}
-  .tow-band .btn{background:var(--ink);color:var(--yellow);font-size:1.2rem;font-family:Oswald,sans-serif;letter-spacing:.04em;padding:16px 28px}
-
-  /* group */
-  .group{grid-template-columns:repeat(3,1fr)}
-  .gcard{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:28px}
-  .gcard h3{font-size:1.3rem;color:var(--yellow);margin-bottom:10px}
-  .gcard p,.gcard li{color:var(--muted);font-size:.95rem}
-  .gcard ul{list-style:none;margin-top:10px}
-  .gcard li{padding:3px 0}
-  .gcard a{color:var(--text);text-decoration:none;font-weight:600}
-  .gcard a:hover{color:var(--yellow)}
-
-  /* contact */
-  .contact{grid-template-columns:1fr 1.1fr;gap:40px}
-  .info-list{list-style:none;display:grid;gap:18px;margin-top:10px}
-  .info-list li{display:flex;gap:14px;align-items:flex-start}
-  .info-list .ic{flex:none;width:42px;height:42px;border-radius:10px;background:var(--ink-3);display:grid;place-items:center;color:var(--yellow);font-size:1.1rem}
-  .info-list small{display:block;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
-  .info-list a{text-decoration:none;font-weight:600;font-size:1.08rem}
-  .info-list a:hover{color:var(--yellow)}
-  form{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:28px;display:grid;gap:14px}
-  form h3{font-size:1.5rem}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  label{font-size:.82rem;color:var(--muted);display:grid;gap:6px}
-  input,select,textarea{width:100%;background:var(--ink);border:1px solid var(--line);border-radius:8px;padding:12px;color:var(--text);font:inherit;font-size:.98rem}
-  input:focus,select:focus,textarea:focus{outline:2px solid var(--yellow);border-color:transparent}
-  textarea{min-height:110px;resize:vertical}
-  .fine{font-size:.8rem;color:var(--muted)}
-
-  footer{background:#0b0c0d;border-top:1px solid var(--line);padding:40px 0 30px;color:var(--muted);font-size:.9rem}
-  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-  footer .soc{display:flex;gap:16px}
-  footer .soc a{text-decoration:none;color:var(--text)}
-  footer .soc a:hover{color:var(--yellow)}
-
-  /* sticky mobile call bar */
-  .callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);border-top:2px solid var(--yellow)}
-  .callbar a{flex:1;text-align:center;padding:14px 6px;text-decoration:none;font-weight:700;font-size:.95rem}
-  .callbar a:first-child{background:var(--yellow);color:var(--ink)}
-
-  @media (max-width:900px){
-    .hero .wrap{grid-template-columns:1fr;padding:56px 20px 64px}
-    .hero-logo{width:240px;order:-1}
-    .why{grid-template-columns:1fr 1fr;gap:28px}
-    .group,.contact{grid-template-columns:1fr}
-    nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--ink);border-bottom:1px solid var(--line)}
-    nav.open{display:block}
-    nav ul{flex-direction:column;gap:0;padding:8px 20px}
-    nav li a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
-    .menu-btn{display:block}
-    .header-cta{display:none}
-    .callbar{display:flex}
-    body{padding-bottom:52px}
-  }
-  @media (max-width:560px){
-    .row{grid-template-columns:1fr}
-    .services{grid-template-columns:1fr}
-    .topbar .hide-sm{display:none}
-    section{padding:64px 0}
-  }
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"905 Heavy Equipment",
+  "description":"Heavy equipment rentals and repair, demolition and excavation in Ontario.",
+  "image":"img/905-heavy-logo.png",
+  "telephone":"+1-437-770-5440",
+  "address":{"@type":"PostalAddress","streetAddress":"73 Eastern Ave","addressLocality":"Brampton","addressRegion":"ON","postalCode":"L6W 1X9","addressCountry":"CA"},
+  "areaServed":["Brampton","Mississauga","Caledon","Greater Toronto Area","Ontario"],
+  "sameAs":["https://www.instagram.com/905heavyequipmentrental/"],
+  "parentOrganization":{"@type":"Organization","name":"905 Group of Companies"}
+}
+</script>
 </head>
-<body>
+<body class="heavy" data-wa="16479837575">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.69 8.24-8.23 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></g></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h14v12H1zM15 9h4l3 3v4h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></g></symbol>
+  <symbol id="i-g" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.2C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.4 5.8c4.3-4 6.9-9.9 6.9-17.3z"/><path fill="#FBBC05" d="M10.5 28.5c-.5-1.4-.8-3-.8-4.5s.3-3.1.8-4.5l-7.9-6.2C1 16.6 0 20.2 0 24s.9 7.4 2.6 10.7l7.9-6.2z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.8c-2.1 1.4-4.8 2.2-8.5 2.2-6.2 0-11.5-4.2-13.4-9.9l-7.9 6.2C6.6 42.6 14.6 48 24 48z"/></symbol>
+</svg>
 
 <div class="topbar">
   <div class="wrap">
-    <span class="hide-sm">Serving Brampton · Mississauga · Caledon · All of Ontario 🇨🇦</span>
+    <div class="switch hide-sm">
+      <a href="index.html" aria-current="page">905 Heavy Equipment</a>
+      <a href="autocare.html">905 Auto Care</a>
+    </div>
     <a class="tow" href="tel:+14377705440">🚨 TOWING DISPATCH 24/7: 437-770-5440</a>
   </div>
 </div>
 
-<header>
+<header class="site">
   <div class="wrap">
     <a class="brand" href="#top">
-      <img src="logo.png" alt="905 Group of Companies logo">
+      <img src="img/905-heavy-logo.png" alt="905 Heavy Equipment logo" width="50" height="50">
       <span><b>905 Heavy Equipment</b><small>Rentals · Repair · Excavation</small></span>
     </a>
-    <nav id="nav">
+    <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#fleet">Equipment</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#group">905 Group</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="autocare.html">Auto Care</a></li>
       </ul>
     </nav>
-    <a class="btn btn-y header-cta" href="#contact">Get a Quote</a>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <div class="header-cta">
+      <a class="btn btn-o" href="tel:+14377705440"><svg><use href="#i-phone"/></svg>Call</a>
+      <a class="btn btn-wa" href="#book"><svg><use href="#i-wa"/></svg>Book on WhatsApp</a>
+    </div>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
   </div>
 </header>
 
 <main id="top">
+  <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <div>
+      <div class="reveal">
         <span class="eyebrow">Demolition &amp; Excavation Company</span>
-        <h1>Heavy Equipment <span>Rentals &amp; Repair</span> You Can Count On</h1>
-        <p>Excavators, dozers, skid steers, wheel loaders and backhoes, ready to work. We also repair and service heavy equipment, haul it on our flatbeds, and take on demolition and excavation jobs anywhere in the GTA and Ontario.</p>
+        <h1>Heavy Equipment <span class="accent">Rentals &amp; Repair</span> You Can Count On</h1>
+        <p class="lead">Rent excavators, dozers, skid steers, wheel loaders and backhoes, all serviced by our own mechanics. We deliver to your site on our flatbeds, and we also take on demolition and excavation jobs across the GTA and Ontario.</p>
         <div class="ctas">
-          <a class="btn btn-y" href="#contact">Request a Rental Quote</a>
-          <a class="btn btn-o" href="tel:+14377705440">Call 437-770-5440</a>
+          <a class="btn btn-wa btn-lg" href="#book"><svg><use href="#i-wa"/></svg>Book Equipment on WhatsApp</a>
+          <a class="btn btn-o btn-lg" href="tel:+14377705440"><svg><use href="#i-phone"/></svg>437-770-5440</a>
         </div>
-        <div class="chips">
-          <span>Excavator</span><span>Dozer</span><span>Skid Steer</span><span>Wheel Loader</span><span>Backhoe</span><span>Attachments</span><span>Flatbed Hauling</span>
+        <div class="trust">
+          <span>🇨🇦 <b>Ontario Proud</b></span>
+          <span>🔧 <b>In-house repair</b></span>
+          <span>🚚 <b>Delivered to your site</b></span>
         </div>
       </div>
-      <img class="hero-logo" src="logo.png" alt="905 Group of Companies">
+      <div class="collage reveal" aria-hidden="true">
+        <figure class="c1"><img src="img/yard-1.jpg" alt=""></figure>
+        <figure class="c2"><img src="img/yard-2.jpg" alt=""></figure>
+        <figure class="c3"><img src="img/yard-3.jpg" alt=""></figure>
+        <div class="badge"><b>24/7</b>Towing &amp; Dispatch</div>
+      </div>
     </div>
   </section>
   <div class="stripe"></div>
 
+  <!-- FLEET -->
   <section id="fleet">
     <div class="wrap">
-      <div class="head">
+      <div class="head reveal">
         <span class="eyebrow">Our Fleet</span>
         <h2>Equipment for Rent</h2>
-        <p>Rent daily, weekly or monthly. Every machine is serviced in-house before it goes out, and we can deliver it to your site.</p>
+        <p>Rent by the day, week or month. Tap <b>Book</b> on any machine to check availability on WhatsApp.</p>
       </div>
-      <div class="grid fleet">
-        <div class="card">
-          <svg viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="38" width="38" height="9" rx="4.5"/><rect x="10" y="24" width="26" height="14"/><path d="M28 24V14h8v10"/><path d="M34 22 54 6l12 14"/><path d="M66 20l-8 10 8 4"/></svg>
+      <div class="grid cards">
+        <article class="card reveal">
+          <svg class="ico" viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="38" width="38" height="9" rx="4.5"/><rect x="10" y="24" width="26" height="14"/><path d="M28 24V14h8v10"/><path d="M34 22 54 6l12 14"/><path d="M66 20l-8 10 8 4"/></svg>
           <h3>Excavators</h3>
           <p>For digging, trenching, foundations and demolition. Mini and full-size machines available.</p>
-          <span class="tag">Dig · Trench · Demo</span>
-        </div>
-        <div class="card">
-          <svg viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="38" width="44" height="9" rx="4.5"/><path d="M20 38V24h16l6-10h10v24"/><path d="M8 18v24l8-4"/><path d="M8 26h12"/></svg>
+          <a class="book" href="#book" data-preselect="Excavator"><svg><use href="#i-wa"/></svg>Book an excavator</a>
+        </article>
+        <article class="card reveal">
+          <svg class="ico" viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="38" width="44" height="9" rx="4.5"/><path d="M20 38V24h16l6-10h10v24"/><path d="M8 18v24l8-4"/><path d="M8 26h12"/></svg>
           <h3>Dozers</h3>
           <p>For grading, pushing material, clearing land and preparing sites.</p>
-          <span class="tag">Grade · Push · Clear</span>
-        </div>
-        <div class="card">
-          <svg viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="26" cy="42" r="6"/><circle cx="48" cy="42" r="6"/><path d="M20 36V14h22l10 14v8"/><path d="M30 14v14h22"/><path d="M52 28l8 2 4 10H54"/></svg>
+          <a class="book" href="#book" data-preselect="Dozer"><svg><use href="#i-wa"/></svg>Book a dozer</a>
+        </article>
+        <article class="card reveal">
+          <svg class="ico" viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="26" cy="42" r="6"/><circle cx="48" cy="42" r="6"/><path d="M20 36V14h22l10 14v8"/><path d="M30 14v14h22"/><path d="M52 28l8 2 4 10H54"/></svg>
           <h3>Skid Steers</h3>
           <p>Small and quick, so they fit tight spaces. Use them for landscaping, loading and snow work.</p>
-          <span class="tag">Compact · Versatile</span>
-        </div>
-        <div class="card">
-          <svg viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="24" cy="40" r="8"/><circle cx="54" cy="40" r="8"/><path d="M16 32V20h14l4-10h10v22h16"/><path d="M60 32 66 20h6l-4 16"/></svg>
+          <a class="book" href="#book" data-preselect="Skid Steer"><svg><use href="#i-wa"/></svg>Book a skid steer</a>
+        </article>
+        <article class="card reveal">
+          <svg class="ico" viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="24" cy="40" r="8"/><circle cx="54" cy="40" r="8"/><path d="M16 32V20h14l4-10h10v22h16"/><path d="M60 32 66 20h6l-4 16"/></svg>
           <h3>Wheel Loaders</h3>
           <p>For moving large amounts of material quickly. They suit aggregate yards, job sites and snow clearing.</p>
-          <span class="tag">Load · Move · Stockpile</span>
-        </div>
-        <div class="card">
-          <svg viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="24" cy="42" r="6"/><circle cx="48" cy="40" r="8"/><path d="M14 34V22h14l4-10h10v22h14"/><path d="M14 28H8l-4 10h8"/><path d="M56 30l8-18 8 10-6 6"/></svg>
+          <a class="book" href="#book" data-preselect="Wheel Loader"><svg><use href="#i-wa"/></svg>Book a wheel loader</a>
+        </article>
+        <article class="card reveal">
+          <svg class="ico" viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="24" cy="42" r="6"/><circle cx="48" cy="40" r="8"/><path d="M14 34V22h14l4-10h10v22h14"/><path d="M14 28H8l-4 10h8"/><path d="M56 30l8-18 8 10-6 6"/></svg>
           <h3>Backhoes</h3>
           <p>A loader and an excavator in one machine. Good for utilities, drainage and general site work.</p>
-          <span class="tag">Two-in-One</span>
-        </div>
-        <div class="card">
-          <svg viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M8 14h24l8 24H16z"/><path d="M44 30h22v10H44z"/><path d="M50 30V18h10v12"/><path d="M14 38v6M34 38v6"/></svg>
+          <a class="book" href="#book" data-preselect="Backhoe"><svg><use href="#i-wa"/></svg>Book a backhoe</a>
+        </article>
+        <article class="card reveal">
+          <svg class="ico" viewBox="0 0 76 52" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M8 14h24l8 24H16z"/><path d="M44 30h22v10H44z"/><path d="M50 30V18h10v12"/><path d="M14 38v6M34 38v6"/></svg>
           <h3>Attachments</h3>
           <p>Buckets, forks, augers, hammers, snow pushers and more. Tell us the job and we'll fit the right tool.</p>
-          <span class="tag">Right Tool, Right Job</span>
-        </div>
+          <a class="book" href="#book" data-preselect="Attachments"><svg><use href="#i-wa"/></svg>Ask about attachments</a>
+        </article>
       </div>
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section id="services" class="light">
     <div class="wrap">
-      <div class="head">
+      <div class="head reveal">
         <span class="eyebrow">What We Do</span>
         <h2>Services</h2>
         <p>From a one-day rental to a full demolition job, our crew handles it from start to finish.</p>
       </div>
-      <div class="grid services">
-        <div class="svc"><div class="num">01</div><div><h3>Heavy Equipment Rentals</h3><p>Excavators, dozers, skid steers, wheel loaders and backhoes on flexible terms, with or without an operator.</p></div></div>
-        <div class="svc"><div class="num">02</div><div><h3>Heavy Equipment Repair</h3><p>Diagnostics, hydraulics, engine, electrical and preventative maintenance. We repair in our shop or come to you on site.</p></div></div>
-        <div class="svc"><div class="num">03</div><div><h3>Demolition</h3><p>Residential and commercial demolition, interior tear-outs and site clean-up, done safely and efficiently.</p></div></div>
-        <div class="svc"><div class="num">04</div><div><h3>Excavation</h3><p>Foundations, trenching, grading, drainage and lot clearing, done right the first time.</p></div></div>
-        <div class="svc"><div class="num">05</div><div><h3>Flatbed &amp; Equipment Hauling</h3><p>Our flatbeds deliver and pick up machines anywhere in the GTA and Ontario.</p></div></div>
-        <div class="svc"><div class="num">06</div><div><h3>24/7 Towing</h3><p>Stuck or broken down? Our dispatch line is open around the clock: <b>437-770-5440</b>.</p></div></div>
+      <div class="grid svc-grid">
+        <div class="svc reveal"><div class="num">01</div><div><h3>Heavy Equipment Rentals</h3><p>Excavators, dozers, skid steers, wheel loaders and backhoes on flexible terms, with or without an operator.</p></div></div>
+        <div class="svc reveal"><div class="num">02</div><div><h3>Heavy Equipment Repair</h3><p>Diagnostics, hydraulics, engine, electrical and preventative maintenance. We repair in our shop or come to you on site.</p></div></div>
+        <div class="svc reveal"><div class="num">03</div><div><h3>Demolition</h3><p>Residential and commercial demolition, interior tear-outs and site clean-up, done safely and efficiently.</p></div></div>
+        <div class="svc reveal"><div class="num">04</div><div><h3>Excavation</h3><p>Foundations, trenching, grading, drainage and lot clearing, done right the first time.</p></div></div>
+        <div class="svc reveal"><div class="num">05</div><div><h3>Flatbed &amp; Equipment Hauling</h3><p>Our flatbeds deliver and pick up machines anywhere in the GTA and Ontario.</p></div></div>
+        <div class="svc reveal"><div class="num">06</div><div><h3>24/7 Towing</h3><p>Stuck or broken down? Our dispatch line is open around the clock: <b>437-770-5440</b>.</p></div></div>
       </div>
     </div>
   </section>
 
+  <!-- HOW IT WORKS -->
   <section>
     <div class="wrap">
-      <div class="grid why">
-        <div class="stat"><b>Family-Owned</b><span>Part of the 905 Group of Companies</span></div>
-        <div class="stat"><b>In-House Repair</b><span>Our mechanics service every machine we rent out</span></div>
-        <div class="stat"><b>We Deliver</b><span>Our own flatbeds bring the equipment to your site</span></div>
-        <div class="stat"><b>Ontario Proud</b><span>Locally owned and operated in Brampton 🇨🇦</span></div>
+      <div class="head center reveal">
+        <span class="eyebrow">Simple Booking</span>
+        <h2>On Site in 3 Steps</h2>
+      </div>
+      <div class="grid steps">
+        <div class="step reveal"><h3>Tell us the job</h3><p>Fill in the booking form or send us a WhatsApp message with the machine, dates and site address.</p></div>
+        <div class="step reveal"><h3>Get a quote</h3><p>We reply on WhatsApp to confirm availability and pricing, and recommend attachments if the job needs them.</p></div>
+        <div class="step reveal"><h3>We deliver</h3><p>The machine arrives serviced and ready to work. When you're done, we pick it up.</p></div>
       </div>
     </div>
   </section>
 
-  <div class="tow-band">
+  <!-- GALLERY -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">From the Yard</span>
+        <h2>Built for Ontario Weather</h2>
+        <p>Summer digs or winter snow, our machines are serviced and ready to go. Follow along on <a class="accent" href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener">@905heavyequipmentrental</a>.</p>
+      </div>
+      <div class="grid gallery">
+        <a class="reveal" href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener"><img src="img/yard-1.jpg" alt="Operator in the cab of a 905 Heavy Equipment machine" loading="lazy"><span>Ready to Work</span></a>
+        <a class="reveal" href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener"><img src="img/yard-2.jpg" alt="Skid steer being prepared for snow season" loading="lazy"><span>Winter Ready</span></a>
+        <a class="reveal" href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener"><img src="img/yard-3.jpg" alt="Heavy equipment being serviced in the shop" loading="lazy"><span>In-House Service</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section>
+    <div class="wrap">
+      <div class="grid stats">
+        <div class="stat reveal"><b>Family-Owned</b><span>Part of the 905 Group of Companies</span></div>
+        <div class="stat reveal"><b>In-House Repair</b><span>Our mechanics service every machine we rent out</span></div>
+        <div class="stat reveal"><b>We Deliver</b><span>Our own flatbeds bring the equipment to your site</span></div>
+        <div class="stat reveal"><b>Ontario Proud</b><span>Locally owned and operated in Brampton 🇨🇦</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
     <div class="wrap">
       <div>
         <h2>Need a Tow? We're Open 24/7.</h2>
         <p>We tow cars, trucks and equipment across Brampton, Mississauga, Caledon and nearby areas.</p>
       </div>
-      <a class="btn" href="tel:+14377705440">📞 437-770-5440</a>
+      <a class="btn" href="tel:+14377705440"><svg><use href="#i-phone"/></svg>437-770-5440</a>
     </div>
   </div>
 
-  <section id="group">
+  <!-- REVIEWS -->
+  <section id="reviews" class="light">
     <div class="wrap">
-      <div class="head">
+      <div class="head reveal">
+        <span class="eyebrow">Reviews</span>
+        <h2>What Our Customers Say</h2>
+        <p>Contractors, landscapers and homeowners across the GTA rely on our machines. Read their reviews on Google, or leave your own.</p>
+      </div>
+      <div class="reviews-top reveal">
+        <div class="g-logo">
+          <svg><use href="#i-g"/></svg>
+          <div><b>Google Reviews</b><span>905 Heavy Equipment · Brampton</span></div>
+        </div>
+        <div class="btns">
+          <a class="btn btn-g" href="https://www.google.com/maps/search/?api=1&amp;query=905+Heavy+Equipment+Rental+Brampton+ON" target="_blank" rel="noopener">Read reviews on Google</a>
+          <a class="btn btn-gl" href="https://www.google.com/maps/search/?api=1&amp;query=905+Heavy+Equipment+Rental+Brampton+ON" target="_blank" rel="noopener">Write a review</a>
+        </div>
+      </div>
+      <div class="grid review-grid" data-reviews="heavy"></div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book" class="alt">
+    <div class="wrap book-wrap">
+      <div class="book-side reveal">
+        <span class="eyebrow">Book Now</span>
+        <h2 style="font-size:clamp(2rem,4.2vw,3rem)">Book Equipment<br>on <span style="color:var(--wa)">WhatsApp</span></h2>
+        <p style="color:var(--muted);margin-top:14px;font-size:1.06rem">Fill in the form and tap send. WhatsApp opens with your booking already written out, and we'll reply with availability and a quote.</p>
+        <ul class="info-list">
+          <li><span class="ic"><svg><use href="#i-wa"/></svg></span><div><small>WhatsApp · Call · Text</small><a href="https://wa.me/16479837575" target="_blank" rel="noopener">647-983-7575</a></div></li>
+          <li><span class="ic"><svg><use href="#i-phone"/></svg></span><div><small>Towing Dispatch 24/7</small><a href="tel:+14377705440">437-770-5440</a></div></li>
+          <li><span class="ic"><svg><use href="#i-pin"/></svg></span><div><small>Yard</small><a href="https://maps.google.com/?q=73+Eastern+Ave+Brampton+ON+L6W+1X9" target="_blank" rel="noopener">73 Eastern Ave, Brampton, ON</a></div></li>
+          <li><span class="ic"><svg><use href="#i-ig"/></svg></span><div><small>Instagram</small><a href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener">@905heavyequipmentrental</a></div></li>
+        </ul>
+        <div class="quick">
+          <p>Or send a quick message:</p>
+          <div class="chips">
+            <a class="chip" data-wa-text="Hi 905 Heavy Equipment, I'd like a quote to rent an excavator.">Excavator quote</a>
+            <a class="chip" data-wa-text="Hi 905 Heavy Equipment, is a skid steer available this week?">Skid steer this week</a>
+            <a class="chip" data-wa-text="Hi 905 Heavy Equipment, I need my machine repaired. Can you help?">Equipment repair</a>
+            <a class="chip" data-wa-text="Hi 905 Heavy Equipment, I'd like a quote for a demolition / excavation job.">Demo / excavation job</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="book reveal" data-title="Equipment Booking – 905 Heavy Equipment" novalidate>
+        <div class="fh">
+          <h3>Booking Request</h3>
+          <span class="wa-pill"><svg><use href="#i-wa"/></svg>Replies on WhatsApp</span>
+        </div>
+        <label class="f">What do you need?
+          <select name="service" data-label="Service" required>
+            <option>Equipment Rental</option>
+            <option>Rental with Operator</option>
+            <option>Equipment Repair</option>
+            <option>Demolition</option>
+            <option>Excavation</option>
+            <option>Flatbed / Hauling</option>
+            <option>Towing</option>
+          </select>
+        </label>
+        <fieldset data-label="Equipment">
+          <legend>Equipment (pick all that apply)</legend>
+          <div class="pick">
+            <label><input type="checkbox" value="Excavator"><span>Excavator</span></label>
+            <label><input type="checkbox" value="Dozer"><span>Dozer</span></label>
+            <label><input type="checkbox" value="Skid Steer"><span>Skid Steer</span></label>
+            <label><input type="checkbox" value="Wheel Loader"><span>Wheel Loader</span></label>
+            <label><input type="checkbox" value="Backhoe"><span>Backhoe</span></label>
+            <label><input type="checkbox" value="Attachments"><span>Attachments</span></label>
+            <label><input type="checkbox" value="Not sure – recommend one"><span>Not sure</span></label>
+          </div>
+        </fieldset>
+        <div class="row">
+          <label class="f">Start date<input type="date" name="start" data-label="Start date" required></label>
+          <label class="f">How long?
+            <select name="duration" data-label="Duration">
+              <option>1 day</option><option>2–3 days</option><option>1 week</option><option>2 weeks</option><option>1 month</option><option>Longer / ongoing</option><option>Not sure yet</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label class="f">Job site (city or address)<input name="site" data-label="Job site" placeholder="e.g. Caledon, ON" required></label>
+          <label class="f">Delivery
+            <select name="delivery" data-label="Delivery">
+              <option>Deliver to my site</option><option>I'll pick up</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label class="f">Your name<input name="name" data-label="Name" autocomplete="name" required></label>
+          <label class="f">Phone<input name="phone" type="tel" data-label="Phone" autocomplete="tel" placeholder="(647) 000-0000" required></label>
+        </div>
+        <label class="f">Job details<textarea name="details" data-label="Details" placeholder="What's the job? Ground conditions, access, attachments needed…"></textarea></label>
+        <p class="err" role="alert"></p>
+        <button class="btn btn-wa btn-lg btn-block" type="submit"><svg><use href="#i-wa"/></svg>Send Booking on WhatsApp</button>
+        <p class="fine">No app? Call or text <a href="tel:+16479837575">647-983-7575</a>.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- GROUP -->
+  <section>
+    <div class="wrap">
+      <div class="head reveal">
         <span class="eyebrow">#905GroupOfCompanies</span>
         <h2>The 905 Group</h2>
         <p>One family of companies covering your cars, your trucks and your heavy equipment.</p>
       </div>
       <div class="grid group">
-        <div class="gcard">
+        <div class="gcard reveal">
+          <img src="img/905-heavy-logo.png" alt="" width="64" height="64">
           <h3>905 Heavy Equipment</h3>
           <p>Heavy equipment rentals and repair, demolition and excavation. Run by Aman Badesha.</p>
-          <ul><li><a href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener">@905heavyequipmentrental</a></li></ul>
+          <a class="more" href="#book">Book equipment →</a>
         </div>
-        <div class="gcard">
-          <h3>905 Auto Care</h3>
-          <p>Full-service auto repair: oil changes, MTO safety certificates, brakes, tires, batteries, alternators, starters, collision repair, electrical, heating and A/C.</p>
-          <ul>
-            <li>73 Eastern Ave, Brampton, ON L6W 1X9</li>
-            <li>Tel: <a href="tel:+19054516700">905-451-6700</a></li>
-            <li>Text: <a href="sms:+16479837575">647-983-7575</a></li>
-          </ul>
+        <div class="gcard reveal">
+          <img src="img/905-autocare-logo.png" alt="" width="64" height="64">
+          <h3>905 Auto Care &amp; Collision</h3>
+          <p>Full-service auto repair since 2014: oil changes, safety certificates, brakes, tires, collision repair and more. Open 7 days a week.</p>
+          <a class="more" href="autocare.html">Visit 905 Auto Care →</a>
         </div>
-        <div class="gcard">
+        <div class="gcard reveal">
+          <svg width="64" height="64" style="color:var(--accent);background:var(--ink-3);border-radius:50%;padding:16px"><use href="#i-truck"/></svg>
           <h3>905 Towing 24/7</h3>
           <p>Round-the-clock towing and flatbed service for cars, trucks and equipment.</p>
-          <ul><li>Dispatch: <a href="tel:+14377705440">437-770-5440</a></li></ul>
+          <a class="more" href="tel:+14377705440">Call 437-770-5440 →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" style="background:var(--ink-2)">
-    <div class="wrap grid contact">
-      <div>
-        <div class="head" style="margin-bottom:24px">
-          <span class="eyebrow">Get In Touch</span>
-          <h2>Ready to Get to Work?</h2>
-          <p>Tell us which machine you need, the dates and where the job is. We'll get back to you quickly with availability and pricing.</p>
-        </div>
-        <ul class="info-list">
-          <li><span class="ic">🚨</span><div><small>Towing Dispatch 24/7</small><a href="tel:+14377705440">437-770-5440</a></div></li>
-          <li><span class="ic">📞</span><div><small>Office</small><a href="tel:+19054516700">905-451-6700</a></div></li>
-          <li><span class="ic">💬</span><div><small>Text</small><a href="sms:+16479837575">647-983-7575</a></div></li>
-          <li><span class="ic">📍</span><div><small>Location</small><a href="https://maps.google.com/?q=73+Eastern+Ave+Brampton+ON+L6W+1X9" target="_blank" rel="noopener">73 Eastern Ave, Brampton, ON L6W 1X9</a></div></li>
-          <li><span class="ic">📷</span><div><small>Instagram</small><a href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener">@905heavyequipmentrental</a></div></li>
-        </ul>
+  <!-- FAQ -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Good to Know</h2>
       </div>
-
-      <form id="quote">
-        <h3>Request a Quote</h3>
-        <div class="row">
-          <label>Name<input name="name" required></label>
-          <label>Phone<input name="phone" type="tel" required></label>
-        </div>
-        <div class="row">
-          <label>Service
-            <select name="service">
-              <option>Equipment Rental</option>
-              <option>Equipment Repair</option>
-              <option>Demolition</option>
-              <option>Excavation</option>
-              <option>Flatbed / Hauling</option>
-              <option>Towing</option>
-            </select>
-          </label>
-          <label>Equipment
-            <select name="equipment">
-              <option>Not sure</option>
-              <option>Excavator</option>
-              <option>Dozer</option>
-              <option>Skid Steer</option>
-              <option>Wheel Loader</option>
-              <option>Backhoe</option>
-            </select>
-          </label>
-        </div>
-        <div class="row">
-          <label>Start date<input name="date" type="date"></label>
-          <label>Job location<input name="location" placeholder="City / address"></label>
-        </div>
-        <label>Details<textarea name="details" placeholder="Describe the job, how long you need the machine, any attachments…"></textarea></label>
-        <button class="btn btn-y" type="submit">Send Request by Text</button>
-        <p class="fine">Pressing the button opens your phone's messaging app with your request already filled in. You just tap send.</p>
-      </form>
+      <div class="faq">
+        <details class="reveal"><summary>Do you deliver the equipment?</summary><p>Yes. Our own flatbeds deliver to job sites and pick up when you're done. Include your site address when you book and we'll quote delivery too.</p></details>
+        <details class="reveal"><summary>Can I rent a machine with an operator?</summary><p>Yes. Choose "Rental with Operator" on the booking form and tell us about the job.</p></details>
+        <details class="reveal"><summary>How quickly will you reply?</summary><p>Booking requests come straight to our WhatsApp, and we reply as fast as we can. For anything urgent, call our 24/7 dispatch at 437-770-5440.</p></details>
+        <details class="reveal"><summary>Do you repair equipment you didn't rent out?</summary><p>Yes. We repair and service heavy equipment of all kinds, in our shop or on site. Send us the make, model and the problem on WhatsApp.</p></details>
+      </div>
     </div>
   </section>
 </main>
 
 <div class="stripe"></div>
-<footer>
+<footer class="site">
   <div class="wrap">
-    <div>© <span id="yr"></span> 905 Heavy Equipment · A 905 Group of Companies business · Brampton, Ontario</div>
-    <div class="soc">
-      <a href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.instagram.com/905autocare/" target="_blank" rel="noopener">905 Auto Care</a>
-      <a href="tel:+14377705440">Towing 24/7</a>
+    <div class="cols">
+      <div>
+        <a class="brand" href="#top"><img src="img/905-heavy-logo.png" alt="" width="50" height="50"><span><b style="color:var(--text)">905 Heavy Equipment</b><small>A 905 Group company</small></span></a>
+        <p style="margin-top:14px;max-width:320px">Heavy equipment rentals and repair, demolition and excavation. Ontario proud 🇨🇦</p>
+      </div>
+      <div><h4>Equipment</h4><ul><li><a href="#fleet">Excavators</a></li><li><a href="#fleet">Dozers</a></li><li><a href="#fleet">Skid Steers</a></li><li><a href="#fleet">Wheel Loaders</a></li><li><a href="#fleet">Backhoes</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="https://wa.me/16479837575" target="_blank" rel="noopener">WhatsApp 647-983-7575</a></li><li><a href="tel:+14377705440">Towing 437-770-5440</a></li><li>73 Eastern Ave, Brampton</li></ul></div>
+      <div><h4>905 Group</h4><ul><li><a href="autocare.html">905 Auto Care</a></li><li><a href="https://www.instagram.com/905heavyequipmentrental/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.instagram.com/905autocare/" target="_blank" rel="noopener">@905autocare</a></li></ul></div>
     </div>
+    <div class="base"><span>© <span data-year></span> 905 Heavy Equipment · 905 Group of Companies</span><span>Brampton · Mississauga · Caledon · Ontario</span></div>
   </div>
 </footer>
 
+<a class="wa-float" href="https://wa.me/16479837575?text=Hi%20905%20Heavy%20Equipment%2C%20I%27d%20like%20to%20book%20a%20machine." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="tip">Book on WhatsApp</span><svg><use href="#i-wa"/></svg></a>
 <div class="callbar">
-  <a href="tel:+14377705440">📞 Call Dispatch</a>
-  <a href="#contact">Get a Quote</a>
+  <a class="c-call" href="tel:+14377705440"><svg><use href="#i-phone"/></svg>Call Dispatch</a>
+  <a class="c-wa" href="#book"><svg><use href="#i-wa"/></svg>Book Now</a>
 </div>
 
-<script>
-  // Number that receives quote requests by text message.
-  const QUOTE_SMS_NUMBER = '+16479837575';
-
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  document.querySelectorAll('#nav a').forEach(a => a.addEventListener('click', () => document.getElementById('nav').classList.remove('open')));
-
-  document.getElementById('quote').addEventListener('submit', e => {
-    e.preventDefault();
-    const f = Object.fromEntries(new FormData(e.target));
-    const msg = `905 Heavy Equipment quote request
-Name: ${f.name}
-Phone: ${f.phone}
-Service: ${f.service}
-Equipment: ${f.equipment}
-Start: ${f.date || 'TBD'}
-Location: ${f.location || 'TBD'}
-Details: ${f.details || '-'}`;
-    const sep = /iPhone|iPad|Mac/.test(navigator.userAgent) ? '&' : '?';
-    window.location.href = `sms:${QUOTE_SMS_NUMBER}${sep}body=${encodeURIComponent(msg)}`;
-  });
-</script>
+<script src="assets/reviews.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>
